@@ -5,7 +5,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-import BootstrapClient from '@/app/components/BootstrapClient.js';
+import BootstrapClient from '@/app/components/BootstrapClient';
 
 export const metadata: Metadata = {
   title: "Norwegian Export Heros",
