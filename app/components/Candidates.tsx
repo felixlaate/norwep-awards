@@ -46,7 +46,7 @@ const Candidates: React.FC<CandidatesProps> = ({ nominees, awards }) => {
     return (
         <>
             <h3>Nominees</h3>
-
+            <em>These are the nominees for the NORWEP Awards 2024!</em>
 
             {groupedNominees && groupedNominees.length > 0 && groupedNominees.map((group: any, groupIndex: number) => (
                 <div key={groupIndex}>
