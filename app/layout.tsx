@@ -1,16 +1,15 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import 'bootstrap/dist/css/bootstrap.css';
-import "./globals.css";
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import BootstrapClient from './components/BootstrapClient'
+import 'bootstrap/dist/css/bootstrap.css'
+import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] });
-
-import BootstrapClient from '../app/components/BootstrapClient.js';
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Norwegian Export Heros",
   description: "Norwegian Energy Partners",
-};
+}
 
 export default function RootLayout({
   children,
@@ -24,5 +23,5 @@ export default function RootLayout({
         <BootstrapClient />
       </body>
     </html>
-  );
+  )
 }
