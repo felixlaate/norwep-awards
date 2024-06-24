@@ -34,13 +34,13 @@ const Navbar: React.FC<NavbarProps> = ({ pages }) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link underline-animation" onClick={() => scrollToSection('candidates')} href="#candidates">Awards</a>
+              <a className="nav-link underline-animation" href="/awards">Awards</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link underline-animation" onClick={() => scrollToSection('candidates')} href="#candidates">Nominees</a>
+              <a className="nav-link underline-animation" onClick={() => scrollToSection('candidates')} href="/#candidates">Nominees</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link underline-animation" onClick={() => scrollToSection('about')} href="#about">About</a>
+              <a className="nav-link underline-animation" onClick={() => scrollToSection('about')} href="/#about">About</a>
             </li>
             {pages?.map((item: any) => (
               <li key={item._id} className="nav-item">
